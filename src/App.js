@@ -9,6 +9,7 @@ class App extends Component {
         <div className="App">
           <Blog />
         </div>
+        <span>Deployed</span>
       </BrowserRouter>
     );
   }
