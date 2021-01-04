@@ -3,7 +3,7 @@ import axios from '../../../axios';
 import Post from '../../../components/Post/Post';
 import FullPost from '../FullPost/FullPost';
 
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import './Posts.css';
 
@@ -43,10 +43,10 @@ class Posts extends Component {
                 post => {
                     return (
                         // <Link to={'/posts/' + post.id} key={post.id}>
-                            <Post
-                                title={post.title}
-                                author={post.author}
-                                clicked={() => this.postSelectedHandler(post.id)} />
+                        <Post
+                            title={post.title}
+                            author={post.author}
+                            clicked={() => this.postSelectedHandler(post.id)} />
                         // </Link>
                     );
 

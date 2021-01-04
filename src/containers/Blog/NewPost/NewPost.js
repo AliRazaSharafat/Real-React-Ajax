@@ -27,13 +27,11 @@ class NewPost extends Component {
     }
 
     render() {
-        let redirect = null;
         // if (this.state.submitted) {
         //     redirect = <Redirect to="/posts/" />
         // }
         return (
             <div className="NewPost">
-                {/* {redirect} */}
                 <h1>Add a Post</h1>
                 <label>Title</label>
                 <input type="text" value={this.state.title} onChange={(event) => this.setState({ title: event.target.value })} />
